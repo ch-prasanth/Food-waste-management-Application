@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/peakpx"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    >
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Create an account"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username_ed"
+            android:layout_width="300dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#040404"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password_ed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/cnf_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Password"
+        android:textColor="#040404"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnf_password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cnf_Password_ed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/baseline_person_outline_24" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/baseline_lock_24" />
+
+    <ImageView
+        android:id="@+id/lock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="134dp"
+        android:src="@drawable/baseline_lock_24" />
+
+    <Button
+        android:id="@+id/Reg_bt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input3"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/Clicktolog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Reg_bt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="200dp"
+        android:text="login"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Reg_bt"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_toStartOf="@+id/Clicktolog"
+        android:text="Already a customer?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    />
+
+
+
+>
+</RelativeLayout>

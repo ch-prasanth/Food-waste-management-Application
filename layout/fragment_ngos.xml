@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ngos_frag"
+    android:background="@drawable/peakpx">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/fonty"
+                android:text="Want"
+                android:textColor="#F44336"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fonty"
+                android:text="Food?"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/want" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#FFFFFF"
+                app:cardCornerRadius="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/shape"
+                            android:backgroundTint="#FFC107"
+                            android:src="@drawable/baseline_question_mark_24" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/shape"
+                            android:backgroundTint="#E8497F"
+                            android:src="@drawable/baseline_donut_large_24" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:layout_margin="10dp"
+                            android:background="@drawable/shape"
+                            android:backgroundTint="#00BCD4"
+                            android:src="@drawable/baseline_history_24" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape"
+                            android:backgroundTint="#4CAF50"
+                            android:src="@drawable/baseline_exit_to_app_24" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request"
+                            android:fontFamily="@font/fonto"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="24dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:fontFamily="@font/fonto"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="35dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/fonto"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="45dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/fonto"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="38dp"
+                            />
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv1"
+                        android:layout_width="380dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#FFC107"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/donnn"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Donation history"
+                                android:fontFamily="@font/fonto"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="You can check donation history Anytime"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv2"
+                        android:layout_width="380dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#EA5285"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/prof"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/fonto"
+                                android:text="Update profile"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="You can update your profile here Anytime"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv3"
+                        android:layout_width="380dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#00BCD4"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/loca"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Current Location"
+                                android:fontFamily="@font/fonto"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Let us know where you are right now"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv4"
+                        android:layout_width="380dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#4CAF50"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/donn_mon"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Donate to the poor"
+                                android:fontFamily="@font/fonto"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="You can donate money to our trust"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv5"
+                        android:layout_width="380dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="#4CAF50"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/donn_mon"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Donate to the poor"
+                                android:fontFamily="@font/fonto"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="You can donate money to our trust"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

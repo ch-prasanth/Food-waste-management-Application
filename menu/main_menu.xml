@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Restaurents"
+            android:icon="@drawable/baseline_food_bank_23"
+            android:title="Restaurents"/>
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="NGO"/>
+        <item
+            android:id="@+id/deliver"
+            android:icon="@drawable/baseline_directions_bike_24"
+            android:title="Deliver"/>
+
+    </group>
+    <item android:title="Personal information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/baseline_person_24"
+                    android:title="Profile"/>
+                <item
+                    android:id="@+id/location"
+                    android:icon="@drawable/baseline_location_on_24"
+                    android:title="Addresses"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/baseline_share_24"
+                    android:title="Share"/>
+                <item
+                    android:id="@+id/rateus"
+                    android:icon="@drawable/baseline_star_rate_24"
+                    android:title="Rate us"/>
+                <item
+                    android:id="@+id/aboutus"
+                    android:icon="@drawable/baseline_info_24"
+                    android:title="About us"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout"/>
+</menu>

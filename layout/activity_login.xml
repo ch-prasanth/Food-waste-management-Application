@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peakpx"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/black"
+        android:text="Login"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username_ed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#FDFAFA"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#040404"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password_ed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/baseline_person_outline_24" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/baseline_lock_24" />
+
+    <TextView
+        android:id="@+id/Forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:textColor="#090909"
+        android:layout_below="@id/input2"
+        android:text="Forgot Password?"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Login_bt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input2"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/Using"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#090909"
+        android:layout_below="@id/Login_bt"
+        android:layout_marginTop="30dp"
+        android:text="Or Signup using"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="57dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/Using"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-1dp"
+        app:srcCompat="@drawable/fb_2" />
+
+    <ImageView
+        android:id="@+id/twi"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/Using"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/fb"
+        app:srcCompat="@drawable/twi_1" />
+
+    <ImageView
+        android:id="@+id/goog"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/Using"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/twi"
+        app:srcCompat="@drawable/goog_2" />
+
+
+    />
+
+</RelativeLayout>

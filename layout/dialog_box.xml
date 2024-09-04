@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Door no."
+        android:id="@+id/ed1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="landmark"
+        android:id="@+id/ed4"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Street"
+        android:id="@+id/ed2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="city"
+        android:id="@+id/ed3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/save"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
